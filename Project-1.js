@@ -129,7 +129,7 @@ export class Project1 extends DDDSuper(I18NMixin(LitElement)) {
        <div class="input-container">
          <input
            type="text"
-           placeholder="Enter HAX site URL"
+           placeholder="Enter HAX URL"
            @input="${e => this.siteUrl = e.target.value}"
          />
          <button @click="${this.handleFetch}">Analyze</button>
@@ -157,7 +157,7 @@ export class Project1 extends DDDSuper(I18NMixin(LitElement)) {
              </div>
            `)}
          </div>
-       ` : html`<p>Please enter a valid HAX site URL to analyze.</p>`}
+       ` : html`<p>Please enter the HAX site URL to analyze.</p>`}
      </div>
    `;
  }
